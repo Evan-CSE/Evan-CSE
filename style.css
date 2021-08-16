@@ -1,6 +1,5 @@
 
 body{
-    margin: 0;
     font-family: 'Uchen', serif;
 }
 
@@ -15,8 +14,10 @@ h1{
 h1>a{
     color:maroon
 }
-header,main{
-    display: flex;
+main{
+    margin-top: 15%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     height: 550px;
     background-repeat: no-repeat;
     justify-content: center;
@@ -24,12 +25,22 @@ header,main{
 
 header{
     background-image: url('images/exp-bg.png');
+    align-items: center;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-repeat: no-repeat;
+    height: 500px;
 }
+
+
+
+
 
 .header{
     padding-top: 5%;
     display: inline-block;
-    width: 50%;
+    width: 100%;
     text-align: center;
 }
 
@@ -38,9 +49,7 @@ header{
     height: 100%;
 }
 
-main{
-    margin-top: 5%;
-}
+
 
 main p{
     text-align: justify;
@@ -67,42 +76,56 @@ section{
     height: 100px;
 }
 
-/* Project Section  */
-
 .project-section{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 2%;
+    margin-top: 3;
+    grid-gap: 30px;
 }
 
+@media screen and (max-width:1000px) {
+    .project-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 3;
+    }
+    header{
+        background-image: url('images/exp-bg.png');
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        /* grid-template-columns: repeat(1,1fr); */
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+    header img{
+        width:80%;
+    }
+    main{
+        display: flex;
+        flex-wrap: nowrap;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+    }
+}
 
 .project{
-    border:3px solid salmon;
-    width:95%;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-y: scroll;
+    border:3px solid red;
+    border-image: linear-gradient(purple,blue);
+    border-image-slice: 4;
+    width: 90%;
     padding:1%;
 }
 
+.project h1{
+    text-align: center;
+}
+
 .project img{
-    width:50%;
-    height: 130px;
+    height: 100px;
+    padding:0 25%;
+    width: 50%;
 }
-
-.project a{
-    color:slategrey;
-}
-
-
-.project p{
-    text-align: justify;
-}
-
-/* Footer Section  */
-
 
 footer{
     display: flex;
