@@ -55,6 +55,10 @@ main p{
     text-align: justify;
 }
 
+#skill{
+    margin-top: 15%;
+}
+
 button{
     padding: 1%;
     background-image: linear-gradient(indianred,orange);
