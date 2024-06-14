@@ -11,7 +11,7 @@ Assalamu alaikum! What's up!
 ---
 
 ### :man_technologist: About Me :
-I am a Software Engineer from Chaldal. I love programming, reading, writing and speaking.
+I am a Software Engineer. I love programming, reading, writing and speaking.
 
 
 ---
